@@ -3,7 +3,7 @@ name: Deploy HomePage Site
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
