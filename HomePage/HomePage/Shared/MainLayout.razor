@@ -1,11 +1,12 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime;
 
 <div class="page">
     <main>
         <div style="background-color:aquamarine" class="top-row px-4">
             <div class="container-fluid">
-            <a class="navbar-brand" href="">LOGO(ちゆき)</a>
-        </div>
+                <a class="navbar-brand" href="">LOGO(ちゆき)</a>
+            </div>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">INFORMATION</a>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">BIOGRAPHY</a>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">DISCOGRAPHY</a>
@@ -21,3 +22,17 @@
         </article>
     </main>
 </div>
+
+@code {
+
+    protected override async Task OnAfterRenderAsync(bool first)
+    {
+        await callJS();
+        await base.OnInitializedAsync();
+    }
+
+    private async Task callJS()
+    {
+        await JSRuntime.InvokeVoidAsync("FromBlazorFunc");
+    }
+}
