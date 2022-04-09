@@ -1,6 +1,5 @@
 .page {
     position: relative;
-    display: flex;
     flex-direction: column;
 }
 
@@ -42,7 +41,7 @@ a.twitterSize img {
         text-overflow: ellipsis;
     }
 
-@media (max-width: 640.98px) {
+@media (max-width: 950.98px) {
     .top-row:not(.auth) {
         display: none;
     }
@@ -56,7 +55,7 @@ a.twitterSize img {
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 951px) {
     .page {
         flex-direction: row;
     }
