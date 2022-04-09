@@ -5,7 +5,7 @@
     <main>
         <div style="background-color:aquamarine" class="top-row px-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">LOGO(ちゆき)</a>
+                <a class="navbar-brand" href="">LOGO</a>
             </div>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">INFORMATION</a>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">BIOGRAPHY</a>
@@ -27,12 +27,14 @@
 
     protected override async Task OnAfterRenderAsync(bool first)
     {
+        if (!first) return;
         await callJS();
         await base.OnInitializedAsync();
     }
 
     private async Task callJS()
     {
-        await JSRuntime.InvokeVoidAsync("FromBlazorFunc");
+
     }
+
 }
