@@ -1,8 +1,5 @@
-﻿export function countdown(message) {
-    const year = new Date().getFullYear();
-    const fourthOfJuly = new Date(year, 6, 4).getTime();
-    const fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
-    const month = new Date().getMonth();
+﻿export function countdown() {
+    const fourthOfJuly = new Date(2022, 3, 19, 17).getTime();
 
     // countdown
     let timer = setInterval(function () {
@@ -11,15 +8,7 @@
         const today = new Date().getTime();
 
         // get the difference
-        let diff;
-        if (month > 6) {
-            diff = fourthOfJulyNextYear - today;
-        } else {
-            diff = fourthOfJuly - today;
-        }
-
-
-
+        let diff = fourthOfJuly - today;
 
         // math
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
