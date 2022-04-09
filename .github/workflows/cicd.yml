@@ -13,15 +13,11 @@ jobs:
         - name: Setup .NET Core
           uses: actions/setup-dotnet@v1
           with:
-            dotnet-version: 6.x
-
-        # Run tests Testプロジェクトがない場合はコメントアウトが必要
-        #- name: Test
-        #  run: dotnet test
+            dotnet-version: 6.0.201
 
         # Generate the website
-        #- name: Publish
-        #  run: dotnet publish BlazorTest/BlazorTest/BlazorTest.csproj --configuration Release
+        - name: Publish
+          run: dotnet publish HomePage/HomePageHomePage.csproj -p:GHPages=true -c:Release -o:publish
 
         # Publish the website
         - name: GitHub Pages action
