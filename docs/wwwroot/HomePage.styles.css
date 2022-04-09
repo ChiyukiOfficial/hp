@@ -1,7 +1,10 @@
+/* /Pages/Index.razor.rz.scp.css */
+.gf[b-890hppwbyn] {
+    font-family: 'Amatic SC', cursive;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-r9dbajrpl9] {
     position: relative;
-    display: flex;
     flex-direction: column;
 }
 
@@ -13,8 +16,14 @@ main[b-r9dbajrpl9] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
+a.twitterSize img[b-r9dbajrpl9] {
+    width: 30px;
+    top: 50%;
+    left: 50%;
+}
+
 .top-row[b-r9dbajrpl9] {
-    background-color: #f7f7f7;
+    background-color: transparent;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
@@ -37,7 +46,7 @@ main[b-r9dbajrpl9] {
         text-overflow: ellipsis;
     }
 
-@media (max-width: 640.98px) {
+@media (max-width: 950.98px) {
     .top-row:not(.auth)[b-r9dbajrpl9] {
         display: none;
     }
@@ -51,7 +60,7 @@ main[b-r9dbajrpl9] {
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 951px) {
     .page[b-r9dbajrpl9] {
         flex-direction: row;
     }
