@@ -20,12 +20,12 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish HomePage/HomePage/HomePage.csproj -p:GHPages=true -c:Release -o:docs
+        run: dotnet publish HomePage/HomePage/HomePage.csproj -p:GHPages=true -c:Release -o:publish
 
       # Deploy the site
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN }}
-          publish_dir: docs/wwwroot
+          publish_dir: publish/wwwroot
           force_orphan: true
