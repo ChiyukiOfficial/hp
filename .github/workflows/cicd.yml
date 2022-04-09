@@ -20,7 +20,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish HomePage/HomePage/HomePage.csproj -p:GHPages=true -c:Release -o:hp/docs
+        run: dotnet publish HomePage/HomePage/HomePage.csproj -p:GHPages=true -c:Release -o:docs
 
       # Deploy the site
       - name: Deploy
