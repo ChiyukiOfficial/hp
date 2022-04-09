@@ -8,6 +8,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Content Remove="wwwroot\css\loading.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="wwwroot\css\loading.css" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.3" PrivateAssets="all" />
 		<PackageReference Include="PublishSPAforGitHubPages.Build" Version="1.3.6" />

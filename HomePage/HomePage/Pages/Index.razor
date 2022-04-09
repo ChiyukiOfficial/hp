@@ -2,51 +2,56 @@
 @inject IJSRuntime js;
 
 <PageTitle>Chiyuki-Official</PageTitle>
-
 <div class="container">
-  <div class="balloon white">
-    <div class="star-red"></div>
-  <div class="face">
-    <div class="eye"></div>
-    <div class="mouth happy"></div>
-  </div>
-  <div class="triangle"></div>
-  <div class="string"></div>
-</div>
+    <div class="balloon white">
+        <div class="star-red"></div>
+        <div class="face">
+            <div class="eye"></div>
+            <div class="mouth happy"></div>
+        </div>
+        <div class="triangle"></div>
+        <div class="string"></div>
+    </div>
 
-<div class="balloon red">
-  <div class="star"></div>
-  <div class="face">
-    <div class="eye"></div>
-    <div class="mouth happy"></div>
-  </div>
-  <div class="triangle"></div>
-  <div class="string"></div>
-</div>
+    <div class="balloon red">
+        <div class="star"></div>
+        <div class="face">
+            <div class="eye"></div>
+            <div class="mouth happy"></div>
+        </div>
+        <div class="triangle"></div>
+        <div class="string"></div>
+    </div>
 
-<div class="balloon blue">
-  <div class="star"></div>
-  <div class="face">
-    <div class="eye"></div>
-    <div class="mouth happy"></div>
-  </div>
-  <div class="triangle"></div>
-  <div class="string"></div>
+    <div class="balloon blue">
+        <div class="star"></div>
+        <div class="face">
+            <div class="eye"></div>
+            <div class="mouth happy"></div>
+        </div>
+        <div class="triangle"></div>
+        <div class="string"></div>
+    </div>
+    <div id="timer"></div>
+    <h1 class="gf">First conntact with...</h1>
+    <h1 class="gf">Twitter</h1>
 </div>
-  <div id="timer"></div>
-  <h1 class="gf">First conntact with...</h1>
+<div style="text-align:center;">
+    <a class="twitter-timeline" data-width="400px" data-chrome=”noheader nofooter” data-tweet-limit="3" href="https://twitter.com/chiyuki_chuuuki?ref_src=twsrc%5Etfw"></a>
 </div>
+<script suppress-error="BL9992" async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <footer>
-  <p>made by <a href="https://twitter.com/RikuYamaguchi_"> リスナー</a> ♡</p>
+    <p>made by <a href=""> リスナー</a> ♡</p>
 </footer>
 
-@code{
+@code {
 
     protected override async Task OnAfterRenderAsync(bool first)
     {
         if (!first) return;
         await callJS();
         await base.OnInitializedAsync();
+        StateHasChanged();
     }
 
     private async Task callJS()

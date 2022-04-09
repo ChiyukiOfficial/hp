@@ -5,16 +5,21 @@
     <main>
         <div class="top-row px-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">LOGO</a>
+                <a class="navbar-brand logoSize" href="https://twitter.com/chiyuki_chuuuki">
+                    <img src="/chiyukiLogo.png" alt="TWITTER">
+                </a>
             </div>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">INFORMATION</a>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">BIOGRAPHY</a>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">DISCOGRAPHY</a>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">MOVIE</a>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">CONTACT</a>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">SHOP</a>
-            <a href="https://twitter.com/chiyuki_chuuuki" class="twitterSize ">
+            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">INFORMATION</a>
+            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">BIOGRAPHY</a>
+            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">DISCOGRAPHY</a>
+            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">MOVIE</a>
+            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">CONTACT</a>
+            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">SHOP</a>
+            <a href="https://twitter.com/chiyuki_chuuuki" class="twitterSize">
                 <img src="/Twitter social icons - circle - blue.png" alt="TWITTER">
+            </a>
+            <a href="https://t.co/AxwMJ5XdSw" class="twitterSize">
+                <img src="/iriam.png" alt="IRIAM">
             </a>
         </div>
         <article class="content px-4">
@@ -22,19 +27,3 @@
         </article>
     </main>
 </div>
-
-@code {
-
-    protected override async Task OnAfterRenderAsync(bool first)
-    {
-        if (!first) return;
-        await callJS();
-        await base.OnInitializedAsync();
-    }
-
-    private async Task callJS()
-    {
-
-    }
-
-}
