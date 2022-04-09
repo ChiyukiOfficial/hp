@@ -1,15 +1,27 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <div class="sidebar">
+    @*    <div class="sidebar">
         <NavMenu />
+        </div>*@
+    <div style="background-color:aquamarine" class="top-row ps-3 navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">LOGO(ちゆき)</a>
+        </div>
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        <div style="background-color:aquamarine" class="top-row px-4">
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">INFORMATION</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">BIOGRAPHY</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">DISCOGRAPHY</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">MOVIE</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">CONTACT</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">SHOP</a>
+            <a class="twitterSize ">
+                <img href="https://twitter.com/chiyuki_chuuuki" src="/logo/Twitter social icons - circle - blue.png" alt="TWITTER">
+            </a>
         </div>
-
         <article class="content px-4">
             @Body
         </article>
