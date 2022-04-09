@@ -13,7 +13,7 @@ body {
     position: relative;
     margin: auto;
     overflow: hidden;
-    width: 460px;
+    width: 420px;
     height: 430px;
 }
 
@@ -72,7 +72,7 @@ h1 {
     background: #F6F4F3;
     height: 85px;
     width: 75px;
-    left: 32%;
+    left: 30%;
     top: 0%;
 }
 
@@ -108,7 +108,7 @@ h1 {
     background: #276FBF;
     height: 80px;
     width: 80px;
-    left: 52%;
+    left: 50%;
     top: 3%;
 }
 
@@ -174,7 +174,7 @@ h1 {
 
 .string {
     position: absolute;
-    height: 70px;
+    height: 30px;
     width: 1px;
     left: 48%;
     top: 100%;
