@@ -1,32 +1,31 @@
-# This is a basic workflow to help you get started with Actions
-name: 'Publish HomePage'
-on: push
+name: Deploy Portfolio Site
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
-        # Checkout the code
-        - uses: actions/checkout@v2
+      # Checkout the code
+      - uses: actions/checkout@v2
 
-        # Install .NET Core SDK
-        - name: Setup .NET Core
-          uses: actions/setup-dotnet@v1
-          with:
-            dotnet-version: 6.0.201
+      # Install .NET Core SDK
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.201
 
-        # Generate the website
-        - name: Publish
-          run: dotnet publish HomePage/HomePageHomePage.csproj -p:GHPages=true -c:Release -o:publish
+      # Publish the site
+      - name: Publish
+        run: dotnet publish HomePage.csproj -p:GHPages=true -c:Release -o:publish
 
-        # Publish the website
-        - name: GitHub Pages action
-          if: ${{ github.ref == 'refs/heads/master' }} #masterにpushされたときのみ実行
-          uses: peaceiris/actions-gh-pages@v3.6.1
-          with:
-            github_token: ${{ secrets.TOKEN }} #Secretに登録したTokenを設定
-            publish_branch: gh-pages
-            publish_dir: docs/
-            allow_empty_commit: false
-            keep_files: false
-            force_orphan: true
+      # Deploy the site
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: docs/
+          force_orphan: true
