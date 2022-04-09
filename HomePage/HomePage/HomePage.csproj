@@ -12,6 +12,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Content Include="Shared\chiyukiLogo.png" />
+	  <Content Include="Shared\iriam.png" />
+	  <Content Include="Shared\Twitter social icons - circle - blue.png">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Include="wwwroot\css\loading.css" />
 	</ItemGroup>
 
@@ -19,12 +27,6 @@
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.3" PrivateAssets="all" />
 		<PackageReference Include="PublishSPAforGitHubPages.Build" Version="1.3.6" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Update="wwwroot\Twitter social icons - circle - blue.png">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Content>
 	</ItemGroup>
 
 </Project>
