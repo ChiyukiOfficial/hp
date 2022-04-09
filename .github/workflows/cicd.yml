@@ -3,7 +3,7 @@ name: Deploy HomePage Site
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -20,7 +20,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish HomePage/HomePage/HomePage.csproj -p:GHPages=true -c:Release -o:docs
+        run: dotnet publish HomePage/HomePage/HomePage.csproj -p:GHPages=true -c:Release -o:hp/docs
 
       # Deploy the site
       - name: Deploy
