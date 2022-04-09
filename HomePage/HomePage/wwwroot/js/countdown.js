@@ -1,5 +1,5 @@
 ﻿export function countdown() {
-    const fourthOfJuly = new Date(2022, 3, 19, 17).getTime();
+    const fourthOfJuly = new Date(2022, 3, 19, 10).getTime();
 
     // countdown
     let timer = setInterval(function () {
