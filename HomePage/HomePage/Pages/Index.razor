@@ -1,9 +1,58 @@
 ﻿@page "/"
+@inject IJSRuntime js;
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Chiyuki-Official</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="container">
+  <div class="balloon white">
+    <div class="star-red"></div>
+  <div class="face">
+    <div class="eye"></div>
+    <div class="mouth happy"></div>
+  </div>
+  <div class="triangle"></div>
+  <div class="string"></div>
+</div>
 
-Welcome to your new app.
+<div class="balloon red">
+  <div class="star"></div>
+  <div class="face">
+    <div class="eye"></div>
+    <div class="mouth happy"></div>
+  </div>
+  <div class="triangle"></div>
+  <div class="string"></div>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div class="balloon blue">
+  <div class="star"></div>
+  <div class="face">
+    <div class="eye"></div>
+    <div class="mouth happy"></div>
+  </div>
+  <div class="triangle"></div>
+  <div class="string"></div>
+</div>
+  <div id="timer"></div>
+  <h1>初配信カウントダウン</h1>
+</div>
+<footer>
+  <p>made by <a href="https://twitter.com/RikuYamaguchi_"> やま</a> ♡</p>
+</footer>
+
+@code{
+
+    protected override async Task OnAfterRenderAsync(bool first)
+    {
+        if (!first) return;
+        await callJS();
+        await base.OnInitializedAsync();
+    }
+
+    private async Task callJS()
+    {
+        var module = await js.InvokeAsync<IJSObjectReference>("import", "./js/countdown.js");
+        await module.InvokeVoidAsync("countdown");
+    }
+
+}
