@@ -13,7 +13,7 @@ body {
     position: relative;
     margin: auto;
     overflow: hidden;
-    width: 380px;
+    width: 360px;
     height: 430px;
 }
 
@@ -40,8 +40,8 @@ h1 {
 .days, .hours, .minutes, .seconds {
     display: inline-block;
     padding: 15px;
-    width: 80px;
-    border-radius: 5px;
+    width: 70px;
+    border-radius: 20px;
 }
 
 .days {
@@ -70,7 +70,7 @@ h1 {
 .white {
     position: absolute;
     background: #F6F4F3;
-    height: 80px;
+    height: 75px;
     width: 75px;
     left: 30%;
     top: 0%;
@@ -89,7 +89,7 @@ h1 {
     position: absolute;
     background: #EF2F3C;
     left: 7%;
-    top: 4%;
+    top: 2%;
     height: 65px;
     width: 70px;
 }
@@ -106,10 +106,10 @@ h1 {
 .blue {
     position: absolute;
     background: #276FBF;
-    height: 80px;
+    height: 75px;
     width: 80px;
     left: 52%;
-    top: 1%;
+    top: 0%;
 }
 
     .blue .triangle {
