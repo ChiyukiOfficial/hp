@@ -8,11 +8,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Content Remove="wwwroot\logo\Twitter social icons - circle - blue.png" />
+	  <Content Remove="wwwroot\Twitter social icons - circle - blue.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="wwwroot\logo\Twitter social icons - circle - blue.png">
+	  <None Include="wwwroot\Twitter social icons - circle - blue.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>
