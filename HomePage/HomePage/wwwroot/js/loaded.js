@@ -1,6 +1,6 @@
 ﻿window.onload = () => {
     const loader = document.getElementById('loader');
-    sleep(1000);
+    sleep(2000);
     loader.classList.add('loaded');
 }
 
