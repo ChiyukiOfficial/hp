@@ -8,12 +8,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Content Remove="wwwroot\css\loading.css" />
 	  <Content Remove="wwwroot\favicon.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="wwwroot\css\loading.css" />
 	  <None Include="wwwroot\favicon.ico" />
 	</ItemGroup>
 
