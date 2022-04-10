@@ -1,28 +1,29 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <main>
-        <ToggleMenu />
-        <div class="top-row px-4">
-            <div class="container-fluid">
-                <a class="navbar-brand logoSize" href="https://twitter.com/chiyuki_chuuuki">
-                    <img src="https://chiyukiofficial.github.io/hp/picture/chiyukiLogo.png" alt="LOGO">
+<div stule="width:100%">
+    <div class="page">
+        <main>
+            <ToggleMenu />
+            <div class="top-row px-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand logoSize" href="https://twitter.com/chiyuki_chuuuki">
+                        <img src="https://chiyukiofficial.github.io/hp/picture/chiyukiLogo.png" alt="LOGO">
+                    </a>
+                </div>
+                <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">INFO</a>
+                <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">CONTACT</a>
+                <a href="https://twitter.com/chiyuki_chuuuki" class="twitterSize">
+                    <img src="https://chiyukiofficial.github.io/hp/picture/Twitter social icons - circle - blue.png" alt="TWITTER">
+                </a>
+                <a href="https://t.co/AxwMJ5XdSw" class="twitterSize">
+                    <img src="https://chiyukiofficial.github.io/hp/picture/iriam.png" alt="IRIAM">
                 </a>
             </div>
-            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">INFO</a>
-            <a href="https://twitter.com/chiyuki_chuuuki" target="_blank">CONTACT</a>
-            <a href="https://twitter.com/chiyuki_chuuuki" class="twitterSize">
-                <img src="https://chiyukiofficial.github.io/hp/picture/Twitter social icons - circle - blue.png" alt="TWITTER">
-            </a>
-            <a href="https://t.co/AxwMJ5XdSw" class="twitterSize">
-                <img src="https://chiyukiofficial.github.io/hp/picture/iriam.png" alt="IRIAM">
-            </a>
-        </div>
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
 </div>
-
 @code {
     private bool collapseNavMenu = true;
 
