@@ -13,10 +13,8 @@ a.twitterSize img {
     left: 50%;
 }
 
-a.logoSize img {
+.logoSize img {
     width: 100px;
-    top: 100%;
-    left: 100%;
 }
 
 .top-row {
@@ -52,6 +50,13 @@ a.logoSize img {
     position: fixed; /* 要素の位置を固定する */
     bottom: 70px; /* 基準の位置を画面の一番下に指定する */
     left: 10px; /* 基準の位置を画面の一番右に指定する */
+}
+
+#logofixed {
+    position: fixed; /* 要素の位置を固定する */
+    top: 26px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .top-row {
