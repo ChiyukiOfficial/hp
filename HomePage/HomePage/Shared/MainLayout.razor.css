@@ -13,6 +13,10 @@ a.twitterSize img {
     left: 50%;
 }
 
+a {
+    z-index:5;
+}
+
 .logoSize img {
     width: 100px;
 }
@@ -62,7 +66,7 @@ a.twitterSize img {
 .top-row {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 4;
 }
 
     .top-row.auth ::deep a:first-child {
