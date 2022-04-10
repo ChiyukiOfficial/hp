@@ -43,7 +43,7 @@ a.logoSize img {
         text-overflow: ellipsis;
     }
 
-@media (max-width: 950.98px) {
+@media (max-width: 380.98px) {
     .top-row:not(.auth) {
         display: none;
     }
@@ -57,7 +57,7 @@ a.logoSize img {
     }
 }
 
-@media (min-width: 951px) {
+@media (min-width: 381px) {
     .page {
         position: relative;
         flex-direction: row;
