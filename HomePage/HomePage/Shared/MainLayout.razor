@@ -1,7 +1,6 @@
 ﻿@inherits LayoutComponentBase
-@inject IJSRuntime JSRuntime;
-
 <div class="page">
+    <ToggleMenu />
     <main>
         <div class="top-row px-4">
             <div class="container-fluid">
@@ -27,3 +26,12 @@
         </article>
     </main>
 </div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

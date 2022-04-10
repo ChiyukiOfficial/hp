@@ -13,10 +13,12 @@
 
 	<ItemGroup>
 	  <None Remove="Shared\MainLayout.razor.css" />
+	  <None Remove="Shared\ToggleMenu.razor.css" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Content Include="Shared\MainLayout.razor.css" />
+	  <Content Include="Shared\ToggleMenu.razor.css" />
 	</ItemGroup>
 
 	<ItemGroup>
