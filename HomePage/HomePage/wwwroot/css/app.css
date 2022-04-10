@@ -2,7 +2,7 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url(../back.jpg);
+    background-image: url(../picture/back.jpg);
 }
 
 h1:focus {

@@ -30,16 +30,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Update="wwwroot\back.jpg">
+	  <Content Update="wwwroot\picture\back.jpg">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Update="wwwroot\chiyukiLogo.png">
+	  <Content Update="wwwroot\picture\chiyukiLogo.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Update="wwwroot\iriam.png">
+	  <Content Update="wwwroot\picture\iriam.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Update="wwwroot\Twitter social icons - circle - blue.png">
+	  <Content Update="wwwroot\picture\Twitter social icons - circle - blue.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	</ItemGroup>
