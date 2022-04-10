@@ -9,24 +9,33 @@
 
 	<ItemGroup>
 	  <Content Remove="wwwroot\css\loading.css" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="Shared\chiyukiLogo.png" />
-	  <Content Include="Shared\iriam.png" />
-	  <Content Include="Shared\Twitter social icons - circle - blue.png">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Content>
+	  <Content Remove="wwwroot\favicon.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Include="wwwroot\css\loading.css" />
+	  <None Include="wwwroot\favicon.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.3" PrivateAssets="all" />
 		<PackageReference Include="PublishSPAforGitHubPages.Build" Version="1.3.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="wwwroot\back.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="wwwroot\chiyukiLogo.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="wwwroot\iriam.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Twitter social icons - circle - blue.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
 </Project>
