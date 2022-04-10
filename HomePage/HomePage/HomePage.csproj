@@ -12,6 +12,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Shared\MainLayout.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Shared\MainLayout.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Include="wwwroot\favicon.ico" />
 	</ItemGroup>
 
